@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
