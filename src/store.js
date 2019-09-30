@@ -16,7 +16,6 @@ export default history => createStore(
         router: connectRouter(history),
         index: reducer
     }),
-    [ 'Use Redux' ],
     composeEnhancers(
         applyMiddleware(
             routerMiddleware(history),

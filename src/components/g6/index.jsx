@@ -1,9 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const StyledP = styled.p`
+    background-color: #fff;
+    color: red;
+`
 
 const G6 = () => {
     return (
         <div>
-            g6
+            <StyledP>g6</StyledP>
         </div>
     )
 }

@@ -9,13 +9,15 @@ import VG6 from './views/g6'
 
 const Routes = (props) => {
     return (
-        <Switch>
-            <Route path="/" exact component={VHome} />
-            <Route path="/wav" component={VWav} />
-            <Route path="/g6" component={VG6} />
-    
-            <Redirect to={{ pathname: '/', search: props.location.search }} />
-        </Switch>
+        <>
+            <Switch>
+                <Route path="/" exact component={VHome} />
+                <Route path="/wav" component={VWav} />
+                <Route path="/g6" component={VG6} />
+        
+                <Redirect to={{ pathname: '/', search: props.location.search }} />
+            </Switch>
+        </>
     )
 }
 
