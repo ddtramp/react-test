@@ -1,0 +1,43 @@
+.wavesurfer__component {
+    position: relative;
+}
+.wavesurfer__component .wavesurfer__image__container {
+    position: relative;
+}
+.wavesurfer__component #waveform {
+    /* position: absolute !important;
+    left: 0;
+    top: 0;
+    width: 100%; */
+    z-index: 7;
+}
+/* .wavesurfer__component #waveform canvas:last-child {
+    opacity: 0;
+} */
+.wavesurfer__component #wave-spectrogram {
+    height: 409.6px;
+}
+.wavesurfer__component #wave-spectrogram > spectrogram {
+    overflow: visible !important;
+}
+/* .wavesurfer__component #wave-spectrogram > spectrogram >  canvas:first-child {
+    left: -44px !important;
+} */
+.wavesurfer__component #wave-spectrogram > spectrogram >  canvas:last-child  {
+    left: 0;
+}
+.wavesurfer__component  .wrapper__buttons {
+    display: flex;
+    margin: 20px 0;
+}
+.wavesurfer__component  .wrapper__buttons > div {
+    flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.wavesurfer__component  .wrapper__buttons > div:first-child button {
+    margin: 0 10px;
+}
+.wavesurfer__component  .wrapper__buttons > div:last-child button {
+    margin: 0 10px;
+}

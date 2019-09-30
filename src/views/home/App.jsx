@@ -7,8 +7,6 @@ import TreeData from './TreeData'
 import Pagina from './pagination'
 import Menu from './Menu'
 
-import Wav from './wav/index'
-
 const  App = () => {
     const [collapsed, setCollapased] = useState(false)
     const toggleCollapsed = () => {
@@ -17,9 +15,7 @@ const  App = () => {
 
   return (
     <div className="App">
-
-        <Wav />
-
+       
 
         <Button type="primary" >
             <Icon type="github" />
