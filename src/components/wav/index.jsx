@@ -14,10 +14,10 @@ import SpectrogramPlugin from 'wavesurfer.js/dist/plugin/wavesurfer.spectrogram'
 import TimelinePlugin from 'wavesurfer.js/dist/plugin/wavesurfer.timeline'
 import CursorPlugin from 'wavesurfer.js/dist/plugin/wavesurfer.cursor'
 
-import * as timeline from './timeline'
+// import * as timeline from './timeline'
 import colormap from 'colormap'
 import './index.css'
-import ColorBar from './ColorBar'
+// import ColorBar from './ColorBar'
 
 const colors = colormap({
     colormap: 'jet',
@@ -25,11 +25,11 @@ const colors = colormap({
     format: 'float'
 })
 
-const colorsRgba =  colormap({
-    colormap: 'jet',
-    nshades: 256,
-    format: 'rgb'
-})
+// const colorsRgba =  colormap({
+//     colormap: 'jet',
+//     nshades: 256,
+//     format: 'rgb'
+// })
 const { Option } = Select
 
 const SpingingStyle = {
@@ -127,7 +127,8 @@ const Wav = (props) => {
         wavesurfer.play()
     }
 
-    const { style, className, url, ...rest } = props
+    const { style, className, url, ...rest } = props // eslint-disable-line
+    
     return (
             <div style={style} className={classnames('wavesurfer__component')}>
                 <div className="wavesurfer__image__container">
